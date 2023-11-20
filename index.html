@@ -13,13 +13,28 @@
     <h2>Tipe Data Umum:</h2>
 
     <ul>
-        <li><strong>Bilangan Bulat:</strong> Bilangan tanpa titik desimal, contohnya 5, -5, 0.</li>
+        <li><strong>Bilangan Bulat:</strong> Bilangan tanpa titik desimal, contohnya <div id="angka"></div></li>
         <li><strong>Pecahan:</strong> Bilangan dengan titik desimal, contohnya 3.14, -3.14, 1.0.</li>
-        <li><strong>String:</strong> Sebuah rangkaian karakter yang batasi didalam kutip satu atau dua, contohnya "Halo, Dunia!", '123'.</li>
+        <li><strong>String:</strong> Sebuah rangkaian karakter yang batasi didalam kutip satu atau dua, contohnya <div id="kalimat"></div></li>
         <li><strong>Boolean:</strong> Mewakili nilai benar atau salah. contohnya true, false</li>
-        <li><strong>Array:</strong> Kumpulan nilai yang diurutkan dan biasanya didalam tanda kurung. contohnya ["abc", 123, true]</li>
-        <li><strong>Objek:</strong> Kumpulan pasangan key-value, punya property dan method.</li>
+        <li><strong>Array:</strong> Kumpulan nilai yang diurutkan dan biasanya didalam tanda kurung. contohnya <div id="arrayhewan"></div></li>
+        <li><strong>Objek:</strong> Kumpulan pasangan key-value, punya property dan method. contohnya <div id="hasilobject"></div</li>
     </ul>
-
+    
+<script>
+    var angka = 10;
+    document.getElementById("angka").innerHTML = angka;
+    var kalimat = "Belajar javascript dasar";
+    document.getElementById("kalimat").innerHTML = kalimat;
+    var hewan = ["Sapi", "Bebek", "Ayam"];
+    document.getElementById("arrayhewan").innerHTML = hewan[0];
+    const manusia = {
+        nama : "pelajar",
+        alamat : "Jakarta",
+        umur : 20,
+        pekerjaan : "pedagang"
+    };
+    document.getElementById("hasilobject").innerHTML = manusia.nama + " tinggal di " + manusia.alamat + ". Dia sekarang berumur "+ manusia.umur +" dan bekerja sebagai " + manusia.pekerjaan;
+</script>
 </body>
 </html>
